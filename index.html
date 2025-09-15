@@ -1,62 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Anexos TFM — Andrea Buenaño</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-    }
-    ol {
-      margin-top: 20px;
-    }
-    li {
-      margin: 12px 0;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
-      border-top: 1px solid #ddd;
-      padding-top: 10px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexos TFM — Más Allá de la Predicción</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid #007acc;
+        }
+        .anexos-list {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .anexo-item {
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid #28a745;
+            background: #f8f9fa;
+            border-radius: 6px;
+            transition: transform 0.2s ease;
+        }
+        .anexo-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+        .anexo-item a {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .anexo-item a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+        .description {
+            color: #666;
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+        .numero-anexo {
+            background: #007acc;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>Anexos TFM — Más Allá de la Predicción</h1>
-  <p>En esta página se encuentran los <strong>notebooks en HTML</strong> generados durante el desarrollo del Trabajo Fin de Máster (UCM, 2025).</p>
+    <div class="header">
+        <h1>📊 Anexos TFM — Más Allá de la Predicción</h1>
+        <p>Notebooks en HTML generados durante el desarrollo del Trabajo Fin de Máster (UCM, 2025)</p>
+    </div>
 
-  <ol>
-    <li><a href="00_descarga_datos_eda_inicial.html">Anexo T0 — Descarga de datos y EDA inicial</a></li>
-    <li><a href="01_creacion_de_churn_y_cohortes_descriptivas.html">Anexo T1 — Creación de churn y cohortes descriptivas</a></li>
-    <li><a href="02_segmentacion_de_clientes_clusteringc.html">Anexo T2 — Segmentación de clientes (Clustering)</a></li>
-    <li><a href="03_a_modelizacion_y_evaluacion_del_churn.html">Anexo T3a — Modelización y evaluación del churn</a></li>
-    <li><a href="03_a_analisis_explicativo_con_regresion_logistica.html">Anexo T3b — Análisis explicativo con regresión logística</a></li>
-    <li><a href="04_simulacion_experimentos_ab.html">Anexo T4 — Simulación de experimentos A/B</a></li>
-    <li><a href="05_preparacion_de_datos_para_dashboard_en_tableau.html">Anexo T5 — Preparación de datos para dashboard en Tableau</a></li>
-  </ol>
+    <div class="anexos-list">
+        <div class="anexo-item">
+            <a href="00_descarga_datos_eda_inicial.html">
+                <span class="numero-anexo">T0</span>
+                Descarga de datos y EDA inicial
+            </a>
+            <div class="description">Análisis exploratorio inicial y descarga de datasets</div>
+        </div>
 
-  <footer>
-    © 2025 Andrea Buenaño — Máster en Data Science, Big Data & Business Analytics (UCM)
-  </footer>
+        <div class="anexo-item">
+            <a href="01_creacion_churn_cohortes.html">
+                <span class="numero-anexo">T1</span>
+                Creación de churn y cohortes descriptivas
+            </a>
+            <div class="description">Definición de métricas de churn y análisis de cohortes</div>
+        </div>
+
+        <div class="anexo-item">
+            <a href="02_segmentacion_clientes.html">
+                <span class="numero-anexo">T2</span>
+                Segmentación de clientes (Clustering)
+            </a>
+            <div class="description">Análisis de clustering para segmentación de usuarios</div>
+        </div>
+
+        <div class="anexo-item">
+            <a href="03a_modelizacion_evaluacion_churn.html">
+                <span class="numero-anexo">T3a</span>
+                Modelización y evaluación del churn
+            </a>
+            <div class="description">Desarrollo y validación de modelos predictivos de churn</div>
+        </div>
+
+        <div class="anexo-item">
+            <a href="03b_analisis_explicativo_regresion.html">
+                <span class="numero-anexo">T3b</span>
+                Análisis explicativo con regresión logística
+            </a>
+            <div class="description">Modelo explicativo con regresión logística</div>
+        </div>
+
+        <div class="anexo-item">
+            <a href="04_simulacion_experimentos_ab.html">
+                <span class="numero-anexo">T4</span>
+                Simulación de experimentos A/B
+            </a>
+            <div class="description">Diseño y simulación de tests A/B para reducción de churn</div>
+        </div>
+
+        <div class="anexo-item">
+            <a href="05_preparacion_datos_tableau.html">
+                <span class="numero-anexo">T5</span>
+                Preparación de datos para dashboard en Tableau
+            </a>
+            <div class="description">ETL y preparación de datos para visualización en Tableau</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Andrea Buenafio — Máster en Data Science, Big Data & Business Analytics (UCM)</p>
+    </div>
 </body>
 </html>
